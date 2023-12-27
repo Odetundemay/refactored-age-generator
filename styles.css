@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: bisque;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+}
+
+.card label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.card input {
+  padding: 8px;
+  margin-top: 10px;
+  width: calc(80% - 20px);
+  border: 1px solid grey;
+  align-items: center;
+}
+
+.card input::placeholder {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card hr {
+  border: none;
+  border: 1px solid #ccc;
+  /* margin: 10px 0; */
+}
+
+.card p {
+  margin: 0;
+}
+
+.date-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 80%;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.additional-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.additional-info hr {
+  flex: 1;
+}

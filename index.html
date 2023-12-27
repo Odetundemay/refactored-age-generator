@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <!-- Wrapping code in a card -->
+      <div class="date-inputs">
+        <div>
+          <label>Day</label>
+          <input
+            id="day"
+            type="number"
+            placeholder="DD"
+            maxlength="2"
+            oninput="this.value = this.value.slice(0, 2)"
+          />
+        </div>
+        <div>
+          <label>Month</label>
+          <input
+            id="month"
+            type="text"
+            placeholder="MM"
+            maxlength="2"
+            oninput="this.value = this.value.slice(0, 2)"
+          />
+        </div>
+        <div>
+          <label>Year</label>
+          <input
+            id="year"
+            type="number"
+            placeholder="YYYY"
+            maxlength="4"
+            oninput="this.value = this.value.slice(0, 4)"
+          />
+
+          <!-- Error message container -->
+        </div>
+      </div>
+      <div class="error-message" id="error-message"></div>
+      <div class="additional-info">
+        <hr />
+        <p>Hello world</p>
+      </div>
+
+      <button onclick="calculateAge()">Calculate Age</button>
+
+      <p id="years"></p>
+      <p id="months"></p>
+      <p id="days"></p>
+    </div>
+  </body>
+</html>
